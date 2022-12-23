@@ -12,7 +12,6 @@ services:
       - "db"
     build:
       dockerfile: Dockerfile
-      context: servicetwo
     ports:
       - "5050:80"
     networks:
