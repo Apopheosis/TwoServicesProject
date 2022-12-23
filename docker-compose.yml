@@ -12,7 +12,7 @@ services:
       - "db"
     build:
       dockerfile: Dockerfile
-      context: servicetwo
+      context: ./servicetwo
     ports:
       - "5050:80"
     networks:
