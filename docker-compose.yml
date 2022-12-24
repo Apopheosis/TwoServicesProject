@@ -9,7 +9,7 @@ services:
     container_name: servicetwo
     image: servicetwo:latest
     depends_on:
-      - "db"
+      - db
     build:
       dockerfile: ./Dockerfile
       context: servicetwo
