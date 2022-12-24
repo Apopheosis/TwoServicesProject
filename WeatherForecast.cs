@@ -1,16 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 namespace servicetwo;
 
 public class WeatherForecast
 {
-    [Key]
-    public int Key { get; set; }
-    
-    [NotMapped]
-    public DateOnly Date { get; set; }
+    [Key] public int Key { get; set; }
+
+    [NotMapped] public DateOnly Date { get; set; }
 
     public int TemperatureC { get; set; }
 

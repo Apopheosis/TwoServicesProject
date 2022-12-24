@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Mvc;
 
 namespace servicetwo.Controllers;
@@ -7,12 +6,14 @@ namespace servicetwo.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
+    private static readonly string[] Summaries =
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
+
     private readonly ILogger<WeatherForecastController> _logger;
-    private AppDbContext _ctx;
+    private readonly AppDbContext _ctx;
+
     public WeatherForecastController(ILogger<WeatherForecastController> logger, AppDbContext ctx)
     {
         _logger = logger;
@@ -27,10 +28,11 @@ public class WeatherForecastController : ControllerBase
             _ctx.Add(weather);
             await _ctx.SaveChangesAsync();
         }
+
         return Ok();
     }
 
-    [HttpGet()]
+    [HttpGet]
     public IEnumerable<WeatherForecast> Get()
     {
         return _ctx.WeatherForecasts.ToList();

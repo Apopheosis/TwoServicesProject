@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using servicetwo.Controllers;
 using servicetwo.Services;
 
 var builder = WebApplication.CreateBuilder(args);
