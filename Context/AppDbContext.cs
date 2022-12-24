@@ -9,5 +9,5 @@ public class AppDbContext: DbContext
         
     }
     
-    public DbSet<WeatherForecast>? Weather { get; set; }
+    public DbSet<WeatherForecast> WeatherForecasts { get; set; }
 }

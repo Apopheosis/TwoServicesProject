@@ -1,6 +1,6 @@
-CREATE TABLE Weather (
-    key int;
-    Datetime date;
-    Temperature int;
-    Summary varchar(50);
-)
+CREATE TABLE WeatherForecast (
+    key INT PRIMARY KEY,
+    Date date,
+    Temperature int,
+    Summary varchar(50)
+);

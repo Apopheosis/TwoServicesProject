@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using servicetwo.Controllers;
+using servicetwo.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+DatabaseManagementService.MigrationInitialization(app);
 
 app.MapControllers();
 

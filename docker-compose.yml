@@ -12,13 +12,12 @@ services:
       - "db"
     build:
       dockerfile: Dockerfile
-      context: ./servicetwo
     ports:
       - "5050:80"
     networks:
       - services-network
   db:
-    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    
     ports:
       - "1433:1433"
     environment:
@@ -27,5 +26,5 @@ services:
     networks:
       - services-network
     volumes:
-      - ./mysql_init:/docker-entrypoint-initdb.d
-      - ./init.sql:/docker-entrypoint-initdb.d
+      - ./Init:/docker-entrypoint-initdb.d
+    image: "mcr.microsoft.com/mssql/server:2022-latest"

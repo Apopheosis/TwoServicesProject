@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PArkhipov\\Documents\\servicetwo\\servicetwo.csproj": {}
+    "C:\\Users\\PArkhipov\\servicetwo\\servicetwo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PArkhipov\\Documents\\servicetwo\\servicetwo.csproj": {
+    "C:\\Users\\PArkhipov\\servicetwo\\servicetwo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PArkhipov\\Documents\\servicetwo\\servicetwo.csproj",
+        "projectUniqueName": "C:\\Users\\PArkhipov\\servicetwo\\servicetwo.csproj",
         "projectName": "servicetwo",
-        "projectPath": "C:\\Users\\PArkhipov\\Documents\\servicetwo\\servicetwo.csproj",
+        "projectPath": "C:\\Users\\PArkhipov\\servicetwo\\servicetwo.csproj",
         "packagesPath": "C:\\Users\\PArkhipov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PArkhipov\\Documents\\servicetwo\\obj\\",
+        "outputPath": "C:\\Users\\PArkhipov\\servicetwo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PArkhipov\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,11 +38,21 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.1, )"
             },

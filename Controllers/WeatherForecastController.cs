@@ -33,6 +33,6 @@ public class WeatherForecastController : ControllerBase
     [HttpGet()]
     public IEnumerable<WeatherForecast> Get()
     {
-        return _ctx.Weather.ToList();
+        return _ctx.WeatherForecasts.ToList();
     }
 }
