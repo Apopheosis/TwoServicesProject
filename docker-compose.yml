@@ -11,10 +11,8 @@ services:
     depends_on:
       - db
     build:
-      dockerfile: Dockerfile-alternate
       context: servicetwo
-    ports:
-      - "5050:80"
+      dockerfile: Dockerfile
     networks:
       - services-network
   db:
