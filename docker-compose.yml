@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     build:
-      context: servicetwo
+      context: ./
       dockerfile: Dockerfile
     networks:
       - services-network

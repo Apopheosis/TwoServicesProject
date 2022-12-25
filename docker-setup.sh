@@ -44,7 +44,7 @@ echo "* Clone repo ..."
 git clone https://github.com/Apopheosis/TwoServicesProject.git
 
 #Pysk compose
-cd /etc/proj/TwoServicesProject/Docker
+cd /etc/proj/TwoServicesProject/
 
 docker-compose build
 docker-compose up
