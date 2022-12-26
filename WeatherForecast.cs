@@ -6,9 +6,8 @@ namespace servicetwo;
 public class WeatherForecast
 {
     [Key] public int Key { get; set; }
-
-    [NotMapped]
-    public DateOnly Date { get; set; }
+    
+    public DateOnly? OccuranceDate { get; set; }
 
     public int TemperatureC { get; set; }
 

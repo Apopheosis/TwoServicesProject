@@ -1,7 +1,7 @@
 CREATE TABLE WeatherForecast
 (
     key         INT PRIMARY KEY,
-    Date        date,
+    OccuranceDate        date,
     Temperature int,
     Summary     varchar(50)
 );

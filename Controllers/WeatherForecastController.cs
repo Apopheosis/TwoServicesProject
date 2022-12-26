@@ -1,3 +1,4 @@
+using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace servicetwo.Controllers;
@@ -23,12 +24,8 @@ public class WeatherForecastController : ControllerBase
     [HttpPost("post")]
     public async Task<IActionResult> Post(WeatherForecast weather)
     {
-        if (ModelState.IsValid)
-        {
-            _ctx.Add(weather);
-            await _ctx.SaveChangesAsync();
-        }
-
+        _ctx.Add(weather);
+        await _ctx.SaveChangesAsync();
         return Ok();
     }
 
